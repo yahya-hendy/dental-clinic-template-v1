@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dental Clinic Template</title>
+</head>
+<body class="bg-[#0B0B0B] text-white antialiased">
+
+    <header id="hero" class="relative min-h-screen overflow-hidden">
+        <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            poster="/images/hero-video-poster.webp" 
+            class="absolute z-0 w-full h-full object-cover"
+        >
+            <source src="/media/hero-video.mp4" type="video/mp4">
+            <img src="/images/hero-fallback.webp" alt="Luxury clinic reception" class="w-full h-full object-cover">
+        </video>
+    
+        <div class="absolute z-10 inset-0 bg-black bg-opacity-50"></div>
+    
+        <div class="container relative z-20 mx-auto flex min-h-screen items-center px-6">
+            <div>
+                <h1 data-key="hero.title" class="font-serif text-4xl lg:text-6xl text-[#C0A062]">
+                    لأن العناية لا تليق إلا بمكانتك
+                </h1>
+                <p data-key="hero.subtitle" class="mt-4 max-w-xl text-lg text-gray-200">
+                    حوّل ابتسامتك إلى ثقة تدوم. استشارة فاخرة وخطة علاج مخصصة.
+                </p>
+                <a href="#booking" data-key="hero.cta" class="inline-block mt-8 rounded-md bg-[#C0A062] px-8 py-3 font-semibold text-black hover:bg-opacity-90 transition-colors">
+                    احجز استشارتك الآن
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <script src="script.js"></script>
+</body>
+</html>

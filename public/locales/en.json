@@ -1,0 +1,34 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "meta": {
+    "title": "{clinicName} | A Smile That Defines You",
+    "description": "Experience unparalleled cosmetic and restorative dentistry in {clinicLocation}. Book your luxury consultation today.",
+    "keywords": "cosmetic dentistry, hollywood smile, dental implants, teeth whitening, {clinicName}"
+  },
+  "hero": {
+    "title": "Because You Deserve Uncompromising Care",
+    "subtitle": "Transform your smile into lasting confidence. Luxury consultation and a personalized treatment plan.",
+    "cta": "Book Your Consultation Now"
+  },
+  "recommender": {
+    "title": "How can we help you today?",
+    "options": [
+      { "label": "I want a better smile", "target": "#services-cosmetic" },
+      { "label": "I have tooth pain", "target": "#services-restorative" },
+      { "label": "I need a routine check-up", "target": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "subtitle": "Choose a time that works for you directly through our instant booking system."
+  },
+  "whatsapp": {
+    "buttonLabel": "Contact us on WhatsApp",
+    "prefilledMessage": "Hello, I would like to book a consultation for {serviceName}. My name is: "
+  },
+  "footer": {
+    "copyright": "© {year} {clinicName}. All rights reserved.",
+    "address": "Address: {clinicAddress}"
+  }
+}

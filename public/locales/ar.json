@@ -1,0 +1,34 @@
+{
+  "lang": "ar",
+  "dir": "rtl",
+  "meta": {
+    "title": "عيادة {clinicName} | ابتسامة تليق بك",
+    "description": "نقدم تجربة فريدة في طب الأسنان التجميلي والعلاجي في {clinicLocation}. احجز استشارتك الفاخرة اليوم.",
+    "keywords": "تجميل أسنان, ابتسامة هوليود, زراعة أسنان, تبييض أسنان, {clinicName}"
+  },
+  "hero": {
+    "title": "لأن العناية لا تليق إلا بمكانتك",
+    "subtitle": "حوّل ابتسامتك إلى ثقة تدوم. استشارة فاخرة وخطة علاج مخصصة.",
+    "cta": "احجز استشارتك الآن"
+  },
+  "recommender": {
+    "title": "بماذا يمكننا مساعدتك اليوم؟",
+    "options": [
+      { "label": "أريد ابتسامة أجمل", "target": "#services-cosmetic" },
+      { "label": "أعاني من ألم في الأسنان", "target": "#services-restorative" },
+      { "label": "أبحث عن فحص دوري", "target": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "احجز موعدك بسهولة",
+    "subtitle": "اختر الوقت المناسب لك مباشرة من خلال نظام الحجز الفوري."
+  },
+  "whatsapp": {
+    "buttonLabel": "تواصل معنا عبر WhatsApp",
+    "prefilledMessage": "مرحباً، أرغب في حجز استشارة بخصوص خدمة {serviceName}. اسمي: "
+  },
+  "footer": {
+    "copyright": "© {year} {clinicName}. جميع الحقوق محفوظة.",
+    "address": "العنوان: {clinicAddress}"
+  }
+}
