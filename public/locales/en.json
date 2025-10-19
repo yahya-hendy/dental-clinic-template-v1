@@ -1,10 +1,13 @@
 {
   "lang": "en",
   "dir": "ltr",
+  "placeholders": {
+    "clinicName": "The Luxury Smile Clinic",
+    "clinicLocation": "in Your City"
+  },
   "meta": {
     "title": "{clinicName} | A Smile That Defines You",
-    "description": "Experience unparalleled cosmetic and restorative dentistry in {clinicLocation}. Book your luxury consultation today.",
-    "keywords": "cosmetic dentistry, hollywood smile, dental implants, teeth whitening, {clinicName}"
+    "description": "Experience unparalleled cosmetic and restorative dentistry {clinicLocation}. Book your luxury consultation today."
   },
   "hero": {
     "title": "Because You Deserve Uncompromising Care",
@@ -14,8 +17,8 @@
   "recommender": {
     "title": "How can we help you today?",
     "options": [
-      { "label": "I want a better smile", "target": "#services-cosmetic" },
-      { "label": "I have tooth pain", "target": "#services-restorative" },
+      { "label": "I want a better smile", "target": "#booking" },
+      { "label": "I have tooth pain", "target": "#booking" },
       { "label": "I need a routine check-up", "target": "#booking" }
     ]
   },
@@ -23,12 +26,17 @@
     "title": "Book Your Appointment",
     "subtitle": "Choose a time that works for you directly through our instant booking system."
   },
-  "whatsapp": {
-    "buttonLabel": "Contact us on WhatsApp",
-    "prefilledMessage": "Hello, I would like to book a consultation for {serviceName}. My name is: "
+  "team": {
+    "title": "Meet Our Team of Experts",
+    "subtitle": "Our team consists of the best specialists to ensure you get the smile of your dreams.",
+    "members": [
+      { "name": "Dr. Ahmed El-Masry", "title": "Cosmetic Dentistry Specialist" },
+      { "name": "Dr. Sarah Ibrahim", "title": "Orthodontist" },
+      { "name": "Dr. Khaled Abdel-Rahman", "title": "Implantology Consultant" }
+    ]
   },
   "footer": {
-    "copyright": "© {year} {clinicName}. All rights reserved.",
-    "address": "Address: {clinicAddress}"
+    "address": "Address: {clinicAddress}",
+    "copyright": "© {year} {clinicName}. All rights reserved."
   }
 }

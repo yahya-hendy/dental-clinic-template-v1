@@ -1,75 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="cosmetic dentistry, hollywood smile, dental implants, teeth whitening">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org", "@type": "Dentist", "name": "{clinicName}", "address": { "@type": "PostalAddress", "streetAddress": "{clinicStreetAddress}", "addressLocality": "{clinicCity}", "postalCode": "{clinicPostalCode}", "addressCountry": "{clinicCountry}" }, "telephone": "{clinicPhone}", "url": "{websiteURL}"
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Dental Clinic Template</title>
 </head>
 <body class="bg-[#0B0B0B] text-white antialiased">
 
-    <header id="hero" class="relative min-h-screen overflow-hidden">
-        <video 
-            autoplay 
-            loop 
-            muted 
-            playsinline 
-            poster="/images/hero-video-poster.webp" 
-            class="absolute z-0 w-full h-full object-cover"
-        >
-            <source src="/media/hero-video.mp4" type="video/mp4">
-            <img src="/images/hero-fallback.webp" alt="Luxury clinic reception" class="w-full h-full object-cover">
-        </video>
-        <div class="absolute z-10 inset-0 bg-black bg-opacity-50"></div>
-        <div class="container relative z-20 mx-auto flex min-h-screen items-center px-6">
-            <div>
-                <h1 data-key="hero.title" class="font-serif text-4xl lg:text-6xl text-[#C0A062]">
-                    لأن العناية لا تليق إلا بمكانتك
-                </h1>
-                <p data-key="hero.subtitle" class="mt-4 max-w-xl text-lg text-gray-200">
-                    حوّل ابتسامتك إلى ثقة تدوم. استشارة فاخرة وخطة علاج مخصصة.
-                </p>
-                <a href="#booking" data-key="hero.cta" class="inline-block mt-8 rounded-md bg-[#C0A062] px-8 py-3 font-semibold text-black hover:bg-opacity-90 transition-colors">
-                    احجز استشارتك الآن
-                </a>
-            </div>
-        </div>
-    </header>
+    <!-- HEADER WITH LANGUAGE SWITCHER -->
+    <nav class="fixed top-0 left-0 w-full z-30 p-4 flex justify-between items-center bg-black bg-opacity-20">
+        <div><!-- Logo Placeholder --></div>
+        <button id="lang-switcher" class="rounded-md border border-gray-600 px-4 py-2 text-sm text-white transition hover:bg-gray-800"></button>
+    </nav>
 
-    <section id="recommender" class="py-20 sm:py-32">
-        <div class="container mx-auto px-6 text-center">
-            <h2 data-key="recommender.title" class="text-3xl font-serif text-white sm:text-4xl">
-                بماذا يمكننا مساعدتك اليوم؟
-            </h2>
-            <div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <button data-key="recommender.options.0.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto">
-                    أريد ابتسامة أجمل
-                </button>
-                <button data-key="recommender.options.1.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto">
-                    أعاني من ألم في الأسنان
-                </button>
-                <button data-key="recommender.options.2.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto">
-                    أبحث عن فحص دوري
-                </button>
-            </div>
-        </div>
-    </section>
+    <!-- HERO SECTION -->
+    <header id="hero" class="relative min-h-screen overflow-hidden"><video autoplay loop muted playsinline poster="/images/hero-video-poster.webp" class="absolute z-0 w-full h-full object-cover"><source src="/media/hero-video.mp4" type="video/mp4"><img src="/images/hero-fallback.webp" alt="Luxury clinic reception" class="w-full h-full object-cover"></video><div class="absolute z-10 inset-0 bg-black bg-opacity-50"></div><div class="container relative z-20 mx-auto flex min-h-screen items-center px-6"><div><h1 data-key="hero.title" class="font-serif text-4xl lg:text-6xl text-[#C0A062]"></h1><p data-key="hero.subtitle" class="mt-4 max-w-xl text-lg text-gray-200"></p><a href="#booking" data-key="hero.cta" class="inline-block mt-8 rounded-md bg-[#C0A062] px-8 py-3 font-semibold text-black hover:bg-opacity-90 transition-colors"></a></div></div></header>
 
-    <section id="booking" class="py-20 sm:py-32 bg-[#0F0F0F]">
-        <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h2 data-key="booking.title" class="text-3xl font-serif text-white sm:text-4xl">
-                    احجز موعدك بسهولة
-                </h2>
-                <p data-key="booking.subtitle" class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
-                    اختر الوقت المناسب لك مباشرة من خلال نظام الحجز الفوري.
-                </p>
-            </div>
-            
-            <div class="calendly-inline-widget mt-12" data-url="https://calendly.com/d/cn3-g8z-d39/30-minute-meeting" style="min-width:320px;height:700px;"></div>
-            </div>
-    </section>
+    <!-- RECOMMENDER SECTION -->
+    <section id="recommender" class="py-20 sm:py-32"><div class="container mx-auto px-6 text-center"><h2 data-key="recommender.title" class="text-3xl font-serif text-white sm:text-4xl"></h2><div class="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"><button data-key="recommender.options.0.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto"></button><button data-key="recommender.options.1.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto"></button><button data-key="recommender.options.2.label" class="w-full rounded-lg border-2 border-[#C0A062] px-8 py-4 text-lg font-semibold text-white transition hover:bg-[#C0A062] hover:text-black sm:w-auto"></button></div></div></section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="py-20 sm:py-32 bg-[#0F0F0F]"><div class="container mx-auto px-6"><div class="text-center"><h2 data-key="booking.title" class="text-3xl font-serif text-white sm:text-4xl"></h2><p data-key="booking.subtitle" class="mt-4 max-w-2xl mx-auto text-lg text-gray-300"></p></div><div class="calendly-inline-widget mt-12" data-url="https://calendly.com/d/cn3-g8z-d39/30-minute-meeting" style="min-width:320px;height:700px;"></div></div></section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="py-20 sm:py-32"><div class="container mx-auto px-6"><div class="text-center"><h2 data-key="team.title" class="text-3xl font-serif text-white sm:text-4xl"></h2><p data-key="team.subtitle" class="mt-4 max-w-2xl mx-auto text-lg text-gray-300"></p></div><div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"><div class="text-center"><img class="mx-auto h-64 w-64 rounded-full object-cover" src="/images/team-1.webp" alt="Photo of the first doctor"><h3 data-key="team.members.0.name" class="mt-6 text-xl font-semibold text-white"></h3><p data-key="team.members.0.title" class="text-base text-[#C0A062]"></p></div><div class="text-center"><img class="mx-auto h-64 w-64 rounded-full object-cover" src="/images/team-2.webp" alt="Photo of the second doctor"><h3 data-key="team.members.1.name" class="mt-6 text-xl font-semibold text-white"></h3><p data-key="team.members.1.title" class="text-base text-[#C0A062]"></p></div><div class="text-center"><img class="mx-auto h-64 w-64 rounded-full object-cover" src="/images/team-3.webp" alt="Photo of the third doctor"><h3 data-key="team.members.2.name" class="mt-6 text-xl font-semibold text-white"></h3><p data-key="team.members.2.title" class="text-base text-[#C0A062]"></p></div></div></div></section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-8"><div class="container mx-auto px-6 text-center text-gray-400"><p data-key="footer.address"></p><p data-key="footer.copyright" class="mt-4 text-sm"></p></div></footer>
+
+    <!-- STICKY WHATSAPP BUTTON -->
+    <a href="#" id="whatsapp-button" class="whatsapp-float" target="_blank"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" class="whatsapp-icon"><path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.57-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-8.052   c-0.9-2.227-1.807-1.916-2.438-1.916c-0.629,0-1.353-0.09-2.074-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.559,12.11,18.537,16.328   c2.673,1.012,4.981,1.344,6.685,1.704c2.531,0.537,4.838,0.447,6.377-0.809c1.789-1.458,3.582-2.959,4.123-3.957   c0.543-0.996,0.543-1.854,0.271-2.299C69.125,55.191,68.402,54.386,68.129,53.938z"/></svg></a>
+    
+    <!-- Scripts -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="script.js"></script>
 </body>

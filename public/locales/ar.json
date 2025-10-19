@@ -1,10 +1,13 @@
 {
   "lang": "ar",
   "dir": "rtl",
+  "placeholders": {
+    "clinicName": "عيادة الابتسامة الفاخرة",
+    "clinicLocation": "في مدينتك"
+  },
   "meta": {
-    "title": "عيادة {clinicName} | ابتسامة تليق بك",
-    "description": "نقدم تجربة فريدة في طب الأسنان التجميلي والعلاجي في {clinicLocation}. احجز استشارتك الفاخرة اليوم.",
-    "keywords": "تجميل أسنان, ابتسامة هوليود, زراعة أسنان, تبييض أسنان, {clinicName}"
+    "title": "{clinicName} | ابتسامة تليق بك",
+    "description": "نقدم تجربة فريدة في طب الأسنان التجميلي والعلاجي {clinicLocation}. احجز استشارتك الفاخرة اليوم."
   },
   "hero": {
     "title": "لأن العناية لا تليق إلا بمكانتك",
@@ -14,8 +17,8 @@
   "recommender": {
     "title": "بماذا يمكننا مساعدتك اليوم؟",
     "options": [
-      { "label": "أريد ابتسامة أجمل", "target": "#services-cosmetic" },
-      { "label": "أعاني من ألم في الأسنان", "target": "#services-restorative" },
+      { "label": "أريد ابتسامة أجمل", "target": "#booking" },
+      { "label": "أعاني من ألم في الأسنان", "target": "#booking" },
       { "label": "أبحث عن فحص دوري", "target": "#booking" }
     ]
   },
@@ -23,12 +26,17 @@
     "title": "احجز موعدك بسهولة",
     "subtitle": "اختر الوقت المناسب لك مباشرة من خلال نظام الحجز الفوري."
   },
-  "whatsapp": {
-    "buttonLabel": "تواصل معنا عبر WhatsApp",
-    "prefilledMessage": "مرحباً، أرغب في حجز استشارة بخصوص خدمة {serviceName}. اسمي: "
+  "team": {
+    "title": "تعرف على فريق الخبراء",
+    "subtitle": "فريقنا مكون من أفضل الأخصائيين لضمان حصولك على ابتسامة أحلامك.",
+    "members": [
+      { "name": "د. أحمد المصري", "title": "أخصائي تجميل الأسنان" },
+      { "name": "د. سارة إبراهيم", "title": "أخصائية تقويم الأسنان" },
+      { "name": "د. خالد عبد الرحمن", "title": "استشاري زراعة الأسنان" }
+    ]
   },
   "footer": {
-    "copyright": "© {year} {clinicName}. جميع الحقوق محفوظة.",
-    "address": "العنوان: {clinicAddress}"
+    "address": "العنوان: {clinicAddress}",
+    "copyright": "© {year} {clinicName}. جميع الحقوق محفوظة."
   }
 }
